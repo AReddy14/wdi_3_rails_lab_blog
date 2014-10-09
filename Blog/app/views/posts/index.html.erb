@@ -1,0 +1,7 @@
+<div>
+	<% @posts.each do |post| %>
+		<div class = 'post'>
+			<%= link_to "see more", post_path(post) %>
+		</div>
+	<% end %>
+</div>
