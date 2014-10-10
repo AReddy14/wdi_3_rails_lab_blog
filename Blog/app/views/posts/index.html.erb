@@ -1,6 +1,9 @@
 <div>
+	<h1>Blog</h1>
 	<% @posts.each do |post| %>
 		<div class = 'post'>
+			<%= post.name %>
+			<%= post.message %>
 			<%= link_to "see more", post_path(post) %>
 		</div>
 	<% end %>
